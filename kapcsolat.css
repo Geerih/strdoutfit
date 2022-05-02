@@ -7,6 +7,25 @@ h2 {
     text-align-last: center;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    margin-top: 85px;
+    margin-bottom: 30px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(92, 92, 92);
+}
+
 .instadiv {
     margin-top: 75px;
     height: 200px;
@@ -62,4 +81,67 @@ h2 {
 
 .emaildiv img{
     margin-top: 75px;
+}
+
+footer{
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #000000;
+}
+
+.footer-bottom{
+    background: #f8f9fa;
+    float: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+ }
+ .footer-bottom p a{
+   color:#000000;
+   font-size: 16px;
+   text-decoration: none;
+ }
+
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+ .footer-menu{
+     float: right;
+ }
+
+ .footer-menu ul{
+     display: flex;
+ }
+
+ .footer-menu ul li{
+     padding-right: 10px;
+     display: block;
+ }
+
+ .footer-menu ul li a{
+     color: #111;
+     text-decoration: none;
+ }
+
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
 }
