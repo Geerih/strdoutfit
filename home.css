@@ -42,7 +42,7 @@ body, html {
 
 .column{
     float: left;
-    padding: 1px;
+    padding: 5px;
     width: 20.00%;
 }
 
@@ -58,19 +58,55 @@ body, html {
     transition: all 0.7s ease;
 }
 
-.row:hover img{
-    -webkit-filter: brightness(70%);
-    transition: all 0.7s ease;
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;
-    -ms-transition: all 0.7s ease;
-}
-
 .row::after{
     content: "";
     clear: both;
     display: table;
+}
+
+.kep1{
+    transition: transform .5s ease;
+}
+
+.kep1:hover{
+    transition: transform .5s ease;
+    transform: scale(1.2);
+}
+
+.kep2{
+    transition: transform .5s ease;
+}
+
+.kep2:hover{
+    transition: transform .5s ease;
+    transform: scale(1.2);
+}
+
+.kep3{
+    transition: transform .5s ease;
+}
+
+.kep3:hover{
+    transition: transform .5s ease;
+    transform: scale(1.2);
+}
+
+.kep4{
+    transition: transform .5s ease;
+}
+
+.kep4:hover{
+    transition: transform .5s ease;
+    transform: scale(1.2);
+}
+
+.kep5{
+    transition: transform .5s ease;
+}
+
+.kep5:hover{
+    transition: transform .5s ease;
+    transform: scale(1.2);
 }
 
 /* Footer */
