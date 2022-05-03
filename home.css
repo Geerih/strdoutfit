@@ -1,11 +1,35 @@
+/* Body & Texts */
+
 h1 {
     size: 200px;
-}
+}s
 
 body, html {
     height: 100%;
-    overflow: overlay;
+    overflow: hidden;
     margin: 0;
+}
+
+/* Loading Screen */
+
+#helpdiv {
+    width: 100%;
+    height: 5000px;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1000;
+    position: absolute;
+}
+
+#loading {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin-top: 25%;
 }
 
 /* Scrollbar */
@@ -27,6 +51,52 @@ body, html {
     background-color: rgb(213, 213, 213);
 }
 
+/* Content */
+
+.header{
+    margin-top: 100px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    transition: color .2s ease-in-out;
+}
+
+.column{
+    float: left;
+    padding: 1px;
+    width: 20.00%;
+}
+
+.row{
+    margin-top: -40px;
+    display: flex;
+    padding: 4px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.row img{
+    transition: all 0.7s ease;
+}
+
+.row:hover img{
+    -webkit-filter: brightness(70%);
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Footer */
+
 footer{
     font-family: 'Roboto Mono', monospace;
     position: absolute;
@@ -35,7 +105,6 @@ footer{
     right: 0;
     height: auto;
     width: 100vw;
-    padding-top: 40px;
     color: #000000;
 }
 
@@ -82,52 +151,10 @@ footer{
      text-decoration: none;
  }
 
- @media (max-width:500px) {
+@media (max-width:500px) {
     .footer-menu ul{
       display: flex;
       margin-top: 10px;
       margin-bottom: 20px;
     }
-}
-
-.header{
-    margin-top: 100px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-    transition: color .2s ease-in-out;
-}
-
-.column{
-    float: left;
-    padding: 1px;
-    width: 20.00%;
-}
-
-.row{
-    margin-top: -40px;
-    display: flex;
-    padding: 4px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-.row img{
-    transition: all 0.7s ease;
-}
-
-.row:hover img{
-    -webkit-filter: brightness(70%);
-    transition: all 0.7s ease;
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;
-    -ms-transition: all 0.7s ease;
-}
-
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
 }
